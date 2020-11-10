@@ -16,8 +16,8 @@ namespace BillInheritance
 
         public Bill(double subtotal, double taxrate) //overload constructor
         {
-            Subtotal = subtotal;
-            TaxRate = taxrate;
+            _subtotal = subtotal;
+            _taxrate = taxrate;
         }
 
         public Bill() //default constructor

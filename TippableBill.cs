@@ -19,7 +19,7 @@ namespace BillInheritance
         {
             Subtotal = subtotal;
             TaxRate = taxrate;
-            Tip = tip;
+            _tip = tip;
         }
 
         
