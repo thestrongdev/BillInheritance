@@ -7,8 +7,12 @@ namespace BillInheritance
 {
     class Bill
     {
-        public double Subtotal { get; set; }
-        public double TaxRate { get; set; }
+ 
+        private double _subtotal;
+        private double _taxrate;
+
+        public double Subtotal { get => _subtotal; set => _subtotal = value; }
+        public double TaxRate { get => _taxrate; set => _taxrate = value; }
 
         public Bill(double subtotal, double taxrate) //overload constructor
         {

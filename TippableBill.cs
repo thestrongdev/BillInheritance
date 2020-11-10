@@ -6,19 +6,23 @@ namespace BillInheritance
 {
     class TippableBill : Bill
     {
-        public double Tip { get; set; }
+   
+        private double _tip;
+        public double Tip { get => _tip; set => _tip = value; }
 
         public TippableBill() //default constructor
         {
 
         }
 
-        public TippableBill(double subtotal, double taxrate, double tip)
+        public TippableBill(double subtotal, double taxrate, double tip) //overload constructor
         {
             Subtotal = subtotal;
             TaxRate = taxrate;
             Tip = tip;
         }
+
+        
 
         public override double CalcTotal()
         {
